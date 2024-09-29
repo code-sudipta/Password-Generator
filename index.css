@@ -1,0 +1,229 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding:20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: black;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    justify-content: center;
+}
+
+.container{
+    width:fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    /* margin-top: 50px; */
+    background-color: aquamarine;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    min-height:250px;
+    justify-content:space-evenly ;
+}
+
+.type{
+    margin:5px;
+}
+
+.preference{
+    margin: 5px;
+}
+
+label{
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+input{
+    cursor: pointer;
+}
+
+input:checked{
+    background-color: red;
+}
+
+#btn{
+    margin:10px 0;
+    padding:10px;
+    width: fit-content;
+    border: 0px;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+    font-family: 'Trebuchet MS';
+}
+
+#btn:hover{
+    background-color: darkgreen;
+}
+
+.screen{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    opacity: 0.5;
+    display: none;
+    z-index: 2;
+}
+
+.modal-container{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: none;
+    justify-content: center;
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+
+}
+
+.modal{
+    width:fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aquamarine;
+    border-radius: 10px;
+    box-shadow: 1px 5px 5px black;
+    width: fit-content;
+}
+
+.modal-header{
+    min-width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+#close{
+    cursor: pointer;
+}
+
+.modal-box{
+    min-width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+.password{
+    padding:10px;
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    border-radius: 5px;
+    width: fit-content;
+    height: fit-content;
+}
+
+#copy{
+    padding:5px 7px;
+    width: fit-content;
+    border: 0px;
+    border-radius: 5px;
+    background-color: gold;
+    /* border: 1px solid black; */
+    /* color: white; */
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Trebuchet MS';
+}
+
+#copy:hover{
+    background-color: rgb(230, 196, 0);
+}
+
+@media screen and (max-width:270px) {
+    .modal-header{
+        min-width: 90%;
+    }
+    
+    .modal-box{
+        min-width: 90%;
+        
+    }
+}
+
+.scale-in-center {
+	-webkit-animation: scale-in-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ @-webkit-keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+@keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+.scale-out-center {
+	-webkit-animation: scale-out-center 0.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: scale-out-center 0.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+ @-webkit-keyframes scale-out-center {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+  }
+@keyframes scale-out-center {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+  }
+  
